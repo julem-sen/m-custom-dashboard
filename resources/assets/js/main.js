@@ -1,8 +1,8 @@
-const btnMenu = document.querySelector(".menu-icon-btn");
-const sidebar = document.querySelector(".sidebar");
+const btnMenu = document.querySelector(".m-menu-icon-btn");
+const sidebar = document.querySelector(".m-sidebar");
 
 btnMenu.addEventListener("click", toggleSideBar)
 
 function toggleSideBar() {
-  sidebar.classList.toggle("collapsed")
+  sidebar.classList.toggle("m-collapsed")
 }
