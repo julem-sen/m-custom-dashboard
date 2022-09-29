@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.material-icons {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    min-height: 100vh;
+}
+
+.container {
+    position:relative;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video Player Styling */
+.container #video-player {
+    position:relative;
+    width: 720px;
+    height:100%;
+    overflow: hidden;
+}
+
+.container #video-player #main-video {
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.container #video-player .controls {
+    position:absolute;
+    bottom:0;
+    left:0;
+    height: 50px;
+    width:100%;
+    background: rgb(240 240 240 / 80%);
+    box-shadow:rgb(0,0,0) 3px 5px 2px 1px;
+    z-index: 3;
+    transform: translateY(0);
+}
+
+#video-player .controls .progress-area {
+    width:100%;
+    height:5px;
+    margin:auto;
+    background: rgb(255, 255, 255)
+}
+
+.controls .progress-area .progress-bar {
+    position: relative;
+    width: 50%;
+    background: rgb(57, 60, 255);
+    height:inherit;
+    border-radius:inherit;
+    cursor: pointer;
+}
+
+.controls .progress-area .progress-bar::before {
+    content: '';
+    position:absolute;
+    width:14px;
+    height:14px;
+    border-radius: 50%;
+    right: -5px;
+    top:50%;
+    transform: translateY(-50%);
+    background: rgb(57, 60, 255);
+}
+
+.controls .controls-list {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width:97%;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.controls .controls-list .controls-left, 
+.controls .controls-list .controls-right {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .controls-list .timer {
+    display:inline-block;
+    font-size:13px;
+    white-space: none;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+.controls .icon {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 8px;
+}
+
+.controls .icon .material-icons {
+    font-size:26px;
+    color: #fff;
+    cursor: pointer;
+}

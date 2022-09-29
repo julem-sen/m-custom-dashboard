@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Video Overlay</title>
+    <link rel="stylesheet" href="resources/assets/css/video-player.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="resources/assets/js/video-player.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="video-player">
+                <video id="main-video">
+                    <source src="/resources/videos/video1080.mp4" type="video/mp4">
+                    <source src="/resources/videos/video720.mp4" type="video/mp4">
+                </video>
+                <div class="progressAreaTime"></div>
+                <div class="controls">
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="controls-list">
+                        <div class="controls-left">
+                            <span class="icon">
+                                <span class="material-symbols-rounded play">
+                                    play_arrow
+                                </span>
+                            </span>
+                            <span class="icon">
+                                <span class="material-symbols-rounded volume">
+                                    volume_up
+                                </span>
+                                <input type="range" name="volume" id="video-volume" class="v-volume">
+                            </span>
+                        </div>
+                        <div class="controls-right">
+                            <span class="icon">
+                                <span class="material-symbols-rounded auto-play">
+                                </span>
+                            </span>
+                            <span class="icon">
+                                <span class="material-symbols-rounded settings-btn">
+                                    settings
+                                </span>
+                            </span>
+                            <span class="icon">
+                                <span class="material-symbols-rounded fullscreen">
+                                    fullscreen
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- <div class="settings">
+                        <div class="video-quality">
+                            <span>Quality</span>
+                            <ul>
+                                <li data-quality="1080">1080P</li>
+                                <li data-quality="720">720P</li>
+                                <li data-quality="480">480P</li>
+                                <li data-quality="360">360P</li>
+                                <li data-quality="240">240P</li>
+                                <li data-quality="auto">Auto</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

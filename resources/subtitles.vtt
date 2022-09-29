@@ -1,0 +1,71 @@
+WEBVTT
+1
+00:00:00.000 --> 00:00:00.970
+- In the last video,
+
+2
+00:00:00.970 --> 00:00:02.660
+I talked all about the window object
+
+3
+00:00:02.660 --> 00:00:04.680
+and how you can pretty much
+just ignore it completely.
+
+4
+00:00:04.680 --> 00:00:05.520
+And in this video,
+
+5
+00:00:05.520 --> 00:00:07.220
+we wanna talk about the document object,
+
+6
+00:00:07.220 --> 00:00:10.060
+which is incredibly useful
+all across programming
+
+7
+00:00:10.060 --> 00:00:11.230
+in the browser.
+
+8
+00:00:11.230 --> 00:00:13.313
+So to see exactly what
+this document object is,
+
+9
+00:00:13.313 --> 00:00:16.017
+let's just console.log out document,
+
+10
+00:00:16.017 --> 00:00:17.820
+and we just type in document.
+
+11
+00:00:17.820 --> 00:00:20.824
+This is exactly the same as
+if we typed window.document.
+
+12
+00:00:20.824 --> 00:00:23.950
+They're both the same thing we
+can just use document though,
+
+13
+00:00:23.950 --> 00:00:26.510
+or window.document it's going
+to print the same thing.
+
+14
+00:00:26.510 --> 00:00:27.343
+As you can see,
+
+15
+00:00:27.343 --> 00:00:29.298
+it prints out this weird
+like hashtag document.
+
+16
+00:00:29.298 --> 00:00:30.311
+And when we open this up,

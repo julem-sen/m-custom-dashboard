@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinebeaMitsumi Inc.</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+icons+Rounded" />
+    <link rel="stylesheet" href="/resources/assets/css/main.css">
+    <link rel="stylesheet" href="/resources/assets/css/overlay.css">
+    <link rel="stylesheet" href="./resources/assets/css/y-video-player.css">
+    <link rel="stylesheet" href="/resources/assets/css/bootstrap-5.2.1/bootstrap.min.css">
+
+    <!-- Scripts -->
+    <script src="/resources/assets/js/bootstrap-5.2.1/bootstrap.min.js"></script>
+    <script src="/resources/assets/js/bootstrap-5.2.1/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header class="mb-3 header">
+        <div class="left-icons">
+            <a href="javascript:void(0)" title="Menu" class="menu-icon-btn">
+                <span class="menu-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </a>
+        </div>
+        <a href="#" class="home-btn" title="Company Home">
+            <a href="index.html" title="MinebeaMitsumi Inc." class="company-logo">
+                <img src="/resources/logo.png" alt="MinebeaMitsumi Inc.">
+            </a>
+        </a>
+        <form class="search-bar">
+            <input type="search" title="Search" class="search-input" placeholder="Search" aria-label="Search">
+            <button type="submit" class="search-btn" title="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div class="right-icons">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" title="Upload Video" class="">
+                <i class="fa-solid fa-upload"></i>
+            </a>
+            <div class="dropdown">
+                <a href="javascript:void(0);" title="Profile" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><i class="fa-solid fa-circle-user"></i> <span>Name</span></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" title="Sign out" href="#"><i
+                                class="fa-solid fa-right-from-bracket"></i> Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="s-container">
+        <aside class="sidebar">
+            <div class="middle-sidebar">
+                <a href="index.html" class="nav-sitem" title="Home">
+                    <span class="nav-icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#" class="nav-sitem" title="Explore">
+                    <span class="nav-icon"><i class="fa-regular fa-compass"></i></i></span>
+                    <span class="nav-text">Explore</span>
+                </a>
+                <a href="#" class="nav-sitem" title="Trainings">
+                    <span class="nav-icon"><i class="fa-solid fa-film"></i></span>
+                    <span class="nav-text">Trainings</span>
+                </a>
+            </div>
+        </aside>
+        <main class="s-content">
+        </main>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const myModal = new bootstrap.Modal('#myModal');
+        window.onloadeddata = window.setTimeout(
+            showModal,
+            1000
+        );
+        // Show modal on page load
+        function showModal() {
+            myModal.show()
+        }
+    </script>
+    <script src="resources/assets/js/main.js"></script>
+    <!-- <script src="./resources/assets/js/overlay.js"></script> -->
+    <!-- <script src="./resources/assets/js/video-player.js"></script> -->
+</body>
+
+</html>
